@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zenkai — Quiz de révision</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="app">
+
+  <div class="header">
+    <a class="header-badge" href="index.html">← Retour</a>
+    <h1>Quiz de révision</h1>
+    <p>Choisis les catégories, le village (si pertinent) et le nombre de questions, puis lance-toi.</p>
+  </div>
+
+  <!-- ═══ CONFIG ═══ -->
+  <div class="card visible" id="configCard">
+    <div class="card-header">
+      <div class="card-step-num">⚙</div>
+      <div class="card-header-text">
+        <h2>Configuration du quiz</h2>
+        <p>Sélectionne une ou plusieurs catégories</p>
+      </div>
+    </div>
+    <div class="card-body">
+
+      <div class="form-group">
+        <div class="form-label">Catégories <span class="required">*</span></div>
+        <div class="chip-grid" id="categoryGrid">
+          <!-- généré en JS -->
+        </div>
+      </div>
+
+      <div class="form-group">
+        <div class="form-label">Nombre de questions</div>
+        <div class="slider-row">
+          <input type="range" id="qCount" min="5" max="50" step="5" value="15" oninput="onCountChange()" />
+          <div class="slider-val" id="qCountVal">15</div>
+        </div>
+        <div class="form-hint" id="qCountHint">15 questions seront tirées au hasard parmi les catégories sélectionnées.</div>
+      </div>
+
+      <div class="form-group">
+        <div class="form-label">Type de questions</div>
+        <div class="chip-grid">
+          <label class="chip" id="chipQcm">
+            <input type="checkbox" id="typeQcm" checked onchange="onTypeToggle()" />
+            <div class="chip-text"><strong>QCM</strong><span>Choix multiple, 4 options</span></div>
+          </label>
+          <label class="chip" id="chipVf">
+            <input type="checkbox" id="typeVf" checked onchange="onTypeToggle()" />
+            <div class="chip-text"><strong>Vrai / Faux</strong><span>Réponse binaire</span></div>
+          </label>
+        </div>
+      </div>
+
+      <div class="btn-row" style="justify-content:flex-end;">
+        <button class="btn btn-primary" id="startBtn" onclick="startQuiz()" disabled>Lancer le quiz →</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══ QUIZ EN COURS ═══ -->
+  <div class="card" id="playCard">
+    <div class="card-body">
+      <div class="quiz-meta">
+        <span id="quizCatLabel">—</span>
+        <span id="quizScoreLabel">Score : 0</span>
+      </div>
+      <div class="quiz-progress-track"><div class="quiz-progress-fill" id="progressFill" style="width:0%"></div></div>
+
+      <div class="q-category-tag" id="qTag">Catégorie</div>
+      <div class="q-text" id="qText">Question…</div>
+      <div class="q-options" id="qOptions"></div>
+
+      <div class="q-explain" id="qExplain"></div>
+
+      <div class="q-footer">
+        <button class="btn btn-primary" id="nextBtn" onclick="nextQuestion()" disabled>Suivant →</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══ RÉSULTATS ═══ -->
+  <div class="card" id="resultCard">
+    <div class="card-body" id="resultContent"></div>
+  </div>
+
+</div>
+
+<script src="js/shared.js"></script>
+<script src="js/quiz.js"></script>
+</body>
+</html>

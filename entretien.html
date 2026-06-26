@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zenkai — Simulateur de Whitelist</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="app">
+
+  <!-- Header -->
+  <div class="header">
+    <a class="header-badge" href="index.html">← Retour</a>
+    <h1>Simulateur de Whitelist</h1>
+    <p>Entraîne-toi à l'entretien de candidature avant de passer devant les vrais recruteurs. L'IA joue le rôle d'un recruteur Zenkai et évalue ta candidature en temps réel.</p>
+    <div class="warning-bar">⚠️ La whitelist n'est pas autorisée aux moins de 16 ans</div>
+  </div>
+
+  <!-- API Key Setup -->
+  <div class="api-setup" id="apiSetup">
+    <h3>🔑 Clé API Gemini requise</h3>
+    <p>Ce simulateur utilise l'IA Google Gemini (gratuit). Obtiens ta clé sur <a class="api-link" href="https://aistudio.google.com/apikey" target="_blank">Google AI Studio ↗</a> et colle-la ici. Elle est stockée uniquement dans ton navigateur (localStorage) — elle n'est jamais envoyée à un serveur autre que celui de Google, et jamais committée dans ce projet.</p>
+    <div class="api-input-row">
+      <input type="password" id="apiKeyInput" placeholder="AIzaSy..." autocomplete="off" />
+      <button class="btn btn-primary" onclick="saveApiKey()">Confirmer</button>
+    </div>
+  </div>
+
+  <!-- Intro -->
+  <div class="intro-card" id="introCard">
+    <div class="intro-steps">
+      <div class="intro-step">
+        <div class="intro-emoji">📋</div>
+        <div class="intro-step-num">1</div>
+        <h3>Hors-Roleplay</h3>
+        <p>Informations personnelles, âge et motivation à rejoindre le serveur</p>
+      </div>
+      <div class="intro-step">
+        <div class="intro-emoji">⚔️</div>
+        <div class="intro-step-num">2</div>
+        <h3>Roleplay</h3>
+        <p>Création de ton personnage, histoire, objectifs et village d'origine</p>
+      </div>
+      <div class="intro-step">
+        <div class="intro-emoji">🎤</div>
+        <div class="intro-step-num">3</div>
+        <h3>Oral IA</h3>
+        <p>Questions dynamiques basées sur ta candidature, comme un vrai recruteur</p>
+      </div>
+    </div>
+    <div class="intro-footer">
+      <div class="info-bar">ℹ️ L'oral est généré selon ce que tu écris — chaque simulation est unique.</div>
+      <button class="btn btn-primary" onclick="startSim()" id="startBtn" style="width:100%;padding:15px;font-size:15px;">Commencer la simulation →</button>
+    </div>
+  </div>
+
+  <!-- Progress -->
+  <div class="progress-bar" id="progressBar" style="display:none;">
+    <div class="step-item">
+      <div class="step-seal" id="seal1"><span>1</span></div>
+      <div class="step-label" id="label1">HRP</div>
+    </div>
+    <div class="step-connector" id="conn1"></div>
+    <div class="step-item">
+      <div class="step-seal" id="seal2"><span>2</span></div>
+      <div class="step-label" id="label2">Roleplay</div>
+    </div>
+    <div class="step-connector" id="conn2"></div>
+    <div class="step-item">
+      <div class="step-seal" id="seal3"><span>3</span></div>
+      <div class="step-label" id="label3">Oral</div>
+    </div>
+  </div>
+
+  <!-- Step 1: HRP -->
+  <div class="card" id="step1">
+    <div class="card-header">
+      <div class="card-step-num">1</div>
+      <div class="card-header-text">
+        <h2>Étape 1 — Hors-Roleplay</h2>
+        <p>Informations personnelles et motivation</p>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="form-group">
+        <div class="form-label">Date de naissance <span class="required">*</span></div>
+        <input type="date" id="dob" onchange="checkAge()" />
+        <div class="age-badge" id="ageBadge">⚠️ Vous devez avoir au moins 16 ans pour candidater.</div>
+      </div>
+
+      <div class="form-group">
+        <div class="form-label">
+          Pourquoi veux-tu rejoindre le serveur ? <span class="required">*</span>
+          <span class="counter" id="c1">0/150 min</span>
+        </div>
+        <textarea id="motivation" placeholder="Explique ta motivation, ce que tu cherches comme expérience RP, pourquoi Zenkai en particulier..." oninput="updateCounter('motivation','c1',150)"></textarea>
+        <div class="form-hint">Minimum 150 caractères — sois sincère et développé.</div>
+        <div class="form-error" id="e-motivation">Ce champ doit faire au moins 150 caractères.</div>
+      </div>
+
+      <div class="form-group">
+        <div class="form-label">
+          Expérience Rôle-play <span class="required">*</span>
+          <span class="counter" id="c2">0/150 min</span>
+        </div>
+        <textarea id="experience" placeholder="Tes expériences passées en RP (serveurs, durée, types de RP pratiqués)..." oninput="updateCounter('experience','c2',150)"></textarea>
+        <div class="form-hint">Minimum 150 caractères — débutant ? C'est ok, sois honnête.</div>
+        <div class="form-error" id="e-experience">Ce champ doit faire au moins 150 caractères.</div>
+      </div>
+
+      <div class="btn-row">
+        <button class="btn btn-primary" onclick="goStep2()">Continuer →</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Step 2: RP -->
+  <div class="card" id="step2">
+    <div class="card-header">
+      <div class="card-step-num">2</div>
+      <div class="card-header-text">
+        <h2>Étape 2 — Roleplay</h2>
+        <p>Ton personnage</p>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="form-row">
+        <div class="form-group">
+          <div class="form-label">Prénom du personnage <span class="required">*</span></div>
+          <input type="text" id="charFirst" placeholder="Ex: Kaito" />
+          <div class="form-error" id="e-charFirst">Ce champ est requis.</div>
+        </div>
+        <div class="form-group">
+          <div class="form-label">Nom du personnage <span class="required">*</span></div>
+          <input type="text" id="charLast" placeholder="Ex: Hayashi" />
+          <div class="form-error" id="e-charLast">Ce champ est requis.</div>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <div class="form-label">Village <span class="required">*</span></div>
+        <select id="village">
+          <option value="">— Sélectionne un village —</option>
+          <option value="Konoha">Konoha — Village Caché de la Feuille</option>
+          <option value="Suna">Suna — Village Caché du Sable</option>
+          <option value="Ame">Ame — Pays de la Pluie</option>
+        </select>
+        <div class="form-error" id="e-village">Sélectionne un village.</div>
+      </div>
+
+      <div class="form-group">
+        <div class="form-label">Support visuel (optionnel)</div>
+        <input type="url" id="visual" placeholder="URL YouTube ou Canvas..." />
+      </div>
+
+      <div class="form-group">
+        <div class="form-label">
+          Histoire du personnage <span class="required">*</span>
+          <span class="counter" id="c3">0/200 min</span>
+        </div>
+        <textarea id="charHistory" placeholder="Origine, passé, événements marquants, famille, trauma... Sois précis et cohérent avec le lore." style="min-height:150px;" oninput="updateCounter('charHistory','c3',200)"></textarea>
+        <div class="form-hint">Minimum 200 caractères. Évite les origines exotiques ou les filiations de Kage.</div>
+        <div class="form-error" id="e-charHistory">Ce champ doit faire au moins 200 caractères.</div>
+      </div>
+
+      <div class="form-group">
+        <div class="form-label">
+          Objectifs du personnage <span class="required">*</span>
+          <span class="counter" id="c4">0/150 min</span>
+        </div>
+        <textarea id="charGoals" placeholder="Quels sont les buts de ton personnage ? Court terme, moyen terme, long terme. Quand ? Comment ? Pourquoi ?" oninput="updateCounter('charGoals','c4',150)"></textarea>
+        <div class="form-hint">Minimum 150 caractères. Réponds aux 3 questions : Quand ? Comment ? Pourquoi ?</div>
+        <div class="form-error" id="e-charGoals">Ce champ doit faire au moins 150 caractères.</div>
+      </div>
+
+      <div class="form-group">
+        <div class="form-label">
+          Caractère du personnage <span class="required">*</span>
+          <span class="counter" id="c5">0/100 min</span>
+        </div>
+        <textarea id="charPersonality" placeholder="Comment se comporte ton personnage ? Ses traits dominants, ses défauts, sa manière d'interagir..." style="min-height:100px;" oninput="updateCounter('charPersonality','c5',100)"></textarea>
+        <div class="form-error" id="e-charPersonality">Ce champ doit faire au moins 100 caractères.</div>
+      </div>
+
+      <div class="btn-row">
+        <button class="btn btn-ghost" onclick="goStep1()">← Retour</button>
+        <button class="btn btn-primary" onclick="goStep3()">Lancer l'oral →</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Step 3: Oral -->
+  <div class="card" id="step3">
+    <div class="card-header">
+      <div class="card-step-num">3</div>
+      <div class="card-header-text">
+        <h2>Étape 3 — Entretien Oral</h2>
+        <p>Le recruteur Zenkai analyse ta candidature et te pose des questions</p>
+      </div>
+    </div>
+    <div class="chat-container">
+      <div class="chat-messages" id="chatMessages"></div>
+      <div class="questions-left" id="questionsLeft"></div>
+      <div class="chat-input-area">
+        <textarea class="chat-input" id="chatInput" placeholder="Ta réponse..." rows="1" onkeydown="handleChatKey(event)" oninput="autoResize(this)" disabled></textarea>
+        <button class="send-btn" id="sendBtn" onclick="sendMessage()" disabled>➤</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Result -->
+  <div class="card" id="resultCard">
+    <div class="card-body">
+      <div id="resultContent"></div>
+    </div>
+  </div>
+
+</div>
+
+<script src="js/shared.js"></script>
+<script src="js/entretien.js"></script>
+</body>
+</html>

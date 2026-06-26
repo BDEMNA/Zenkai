@@ -1,0 +1,13 @@
+{
+  "name": "zenkai-whitelist-trainer-tools",
+  "version": "1.0.0",
+  "description": "Script local de génération de questions de quiz via Gemini. Ne fait PAS partie du site déployé.",
+  "private": true,
+  "scripts": {
+    "generate": "node tools/generate-questions.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "node-fetch": "^2.7.0"
+  }
+}

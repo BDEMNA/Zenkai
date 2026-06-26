@@ -1,0 +1,162 @@
+[
+  {
+    "id": "clans-001",
+    "type": "qcm",
+    "question": "Quel grade minimum est requis pour candidater à un clan, sur un personnage sans clan ?",
+    "options": ["Tokubetsu Jōnin (TKJ)", "Chunin", "Jōnin", "Genin Confirmé"],
+    "answer": 0,
+    "explanation": "Pour candidater à un clan, il faut avoir un personnage sans clan de grade TKJ minimum (Tokubetsu Jōnin), au moins 1 semaine d'ancienneté sur le serveur, et aucun casier HRP."
+  },
+  {
+    "id": "clans-002",
+    "type": "vf",
+    "question": "Pour candidater à un clan, il faut au minimum 1 semaine d'ancienneté sur le serveur.",
+    "answer": true,
+    "explanation": "C'est une des trois conditions cumulatives pour candidater : grade TKJ minimum, au moins 1 semaine d'ancienneté, et aucun casier HRP."
+  },
+  {
+    "id": "clans-003",
+    "type": "qcm",
+    "question": "Quelles sont les deux étapes officielles d'une candidature de clan ?",
+    "options": [
+      "Dépôt de candidature puis entretien oral",
+      "Vote communautaire puis validation Kage",
+      "Test RP puis vote du clan",
+      "Lettre de motivation puis examen écrit"
+    ],
+    "answer": 0,
+    "explanation": "La candidature se déroule en deux étapes : Étape 1, dépôt de candidature et sélection par l'équipe administrative ; Étape 2, entretien oral (questions/réponses et scène RP avec le staff ou les responsables du clan)."
+  },
+  {
+    "id": "clans-004",
+    "type": "vf",
+    "question": "Si la candidature de clan est acceptée, le personnage peut sortir de l'académie à partir de 12 ans en cas d'exception.",
+    "answer": false,
+    "explanation": "Si accepté, le personnage sort de l'académie entre 14 et 15 ans — aucune exception en dessous de cet âge."
+  },
+  {
+    "id": "clans-005",
+    "type": "qcm",
+    "question": "Quelles sont les obligations administratives du chef de clan ?",
+    "options": [
+      "Déclarer chaque nouveau membre, tenir à jour le recensement, déclarer tous les RPK sur Discord",
+      "Uniquement organiser des entraînements hebdomadaires",
+      "Gérer seul les conflits avec les autres clans sans passer par le staff",
+      "Valider personnellement chaque promotion de grade"
+    ],
+    "answer": 0,
+    "explanation": "Le chef de clan doit déclarer chaque nouveau membre pour l'intégrer officiellement, tenir à jour le recensement des membres actifs, et déclarer tous les RPK de ses membres dans le salon de suivi sur Discord — pas sur le launcher."
+  },
+  {
+    "id": "clans-006",
+    "type": "vf",
+    "question": "Un slot clan peut être retiré automatiquement en cas d'inactivité d'une semaine sans prévenir dans le salon du clan.",
+    "answer": true,
+    "explanation": "C'est l'un des cas de perte de slot : l'inactivité d'une semaine sur le serveur sans prévenir dans le salon du clan entraîne un retrait automatique du slot."
+  },
+  {
+    "id": "clans-007",
+    "type": "qcm",
+    "question": "Qu'est-ce qui permet réellement d'identifier l'appartenance d'un combattant à un clan ?",
+    "options": [
+      "Une spécificité propre au clan ou un spell de clan utilisé de manière visible",
+      "Sa stance ou son style de combat",
+      "Les SFX liés au Sharingan ou au Byakugan",
+      "Le simple fait de porter une tenue similaire à un autre membre"
+    ],
+    "answer": 0,
+    "explanation": "Seuls une spécificité propre au clan (visible et non ambiguë) ou un spell de clan utilisé de manière visible permettent d'identifier l'appartenance. La stance et les SFX ne le permettent pas — voir quelqu'un utiliser le Sharingan ne prouve pas qu'il est Uchiha."
+  },
+  {
+    "id": "clans-008",
+    "type": "vf",
+    "question": "Voir un adversaire utiliser le Byakugan en combat prouve formellement qu'il appartient au clan Hyuga.",
+    "answer": false,
+    "explanation": "Les SFX (bruits liés au Sharingan, Byakugan, etc.) ne permettent PAS d'identifier l'appartenance à un clan. Seul un élément visiblement distinctif et intentionnellement utilisé le permet."
+  },
+  {
+    "id": "clans-009",
+    "type": "qcm",
+    "question": "Combien de slots maximum une Famille Mineure peut-elle avoir au départ ?",
+    "options": ["6 slots maximum", "Aucune limite", "2 slots maximum", "10 slots maximum"],
+    "answer": 0,
+    "explanation": "Les Familles Mineures peuvent commencer à 6 slots maximum, sans candidature nécessaire — démarrage entre joueurs directement en jeu (IG)."
+  },
+  {
+    "id": "clans-010",
+    "type": "vf",
+    "question": "Une Famille Majeure perdure même si son chef meurt.",
+    "answer": true,
+    "explanation": "C'est une caractéristique des Familles Majeures : la famille perdure même si le chef meurt, contrairement à une structure qui dépendrait entièrement d'un seul joueur."
+  },
+  {
+    "id": "clans-011",
+    "type": "qcm",
+    "question": "Sur quoi repose le passage d'une Famille Mineure à Majeure ?",
+    "options": [
+      "Validation du conseil/kage IG, suivie d'une demande HRP au MJ Famille et d'une candidature panel obligatoire",
+      "Le simple vote des membres de la famille",
+      "Un nombre minimum de RPK réussis",
+      "Aucune validation n'est nécessaire, c'est automatique après 6 mois"
+    ],
+    "answer": 0,
+    "explanation": "Le passage à Famille Majeure se fait sur validation du conseil/kage IG, qui fait ensuite la demande HRP au MJ Famille, avec une candidature panel obligatoire pour validation."
+  },
+  {
+    "id": "diplo-001",
+    "type": "vf",
+    "question": "Un bug de règle HRP (nombre de participants, NLR, etc.) peut constituer un casus belli valable en RP.",
+    "answer": false,
+    "explanation": "Une infraction au règlement du serveur (HRP) ne constitue PAS une raison valable de casus belli en RP. C'est une infraction examinée par le service de modération, et les deux registres (HRP et RP) sont séparés."
+  },
+  {
+    "id": "diplo-002",
+    "type": "qcm",
+    "question": "Qui peut être impliqué dans les arbitrages de niveau élevé (Warn/Ban) liés à des violations de traités ?",
+    "options": ["Le Daimyo", "Uniquement les deux Kage concernés", "Le chef de clan le plus ancien", "Aucune autorité supplémentaire n'intervient"],
+    "answer": 0,
+    "explanation": "Le Daimyo peut être impliqué dans les arbitrages de niveau élevé (Warn/Ban) concernant les violations de traités diplomatiques."
+  },
+  {
+    "id": "diplo-003",
+    "type": "vf",
+    "question": "Les traités signés entre villages ou entre clans n'ont qu'une valeur symbolique et ne sont pas contraignants en RP.",
+    "answer": false,
+    "explanation": "Les traités ont une valeur contraignante en RP. Leur respect est obligatoire pour toutes les parties signataires, et toute violation doit être signalée via les canaux officiels (ticket ou BDA)."
+  },
+  {
+    "id": "rpk-grade-001",
+    "type": "qcm",
+    "question": "À partir de quel grade un ninja est-il éligible au RPK ?",
+    "options": ["Jōnin ou supérieur", "Chunin ou supérieur", "Tokubetsu Jōnin ou supérieur", "Tous les grades sont éligibles"],
+    "answer": 0,
+    "explanation": "Tout ninja de rang Jōnin ou supérieur est éligible au RPK, dans n'importe quel pays. Le RPK exige une capture en combat ou une situation de guerre avec conséquences réelles."
+  },
+  {
+    "id": "rpk-grade-002",
+    "type": "vf",
+    "question": "Le passage au grade CMJ accorde une semaine d'immunité contre la mort RP, comme le passage Jōnin.",
+    "answer": false,
+    "explanation": "Le passage CMJ n'accorde aucune immunité, contrairement au passage Jōnin (1 semaine) et au passage Kage (1 semaine également)."
+  },
+  {
+    "id": "rpk-grade-003",
+    "type": "qcm",
+    "question": "Que se passe-t-il à l'immunité d'un ninja récemment promu Jōnin s'il est capturé une seule fois pendant sa semaine d'immunité ?",
+    "options": [
+      "L'immunité saute immédiatement",
+      "Rien, l'immunité reste valable jusqu'à la fin de la semaine",
+      "L'immunité est prolongée d'une semaine supplémentaire",
+      "Cela dépend du MJ en charge du ticket"
+    ],
+    "answer": 0,
+    "explanation": "Si le ninja est capturé une seule fois, l'immunité saute immédiatement. De plus, en guerre, aucune immunité ne s'applique."
+  },
+  {
+    "id": "rpk-grade-004",
+    "type": "vf",
+    "question": "Un RPK peut être lancé sans tentative de diplomatie préalable si la situation est jugée suffisamment grave.",
+    "answer": false,
+    "explanation": "Il est interdit de lancer un RPK sans tentative de diplomatie préalable, et sans proposer une porte de sortie cohérente et acceptable — quelle que soit la gravité perçue de la situation."
+  }
+]

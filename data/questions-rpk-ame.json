@@ -1,0 +1,42 @@
+[
+  {
+    "id": "rpk-ame-001",
+    "type": "vf",
+    "question": "Il existe une zone safe automatique à Ame, peu importe où l'on se trouve dans le pays de la Pluie.",
+    "answer": false,
+    "explanation": "Il n'existe pas de zone safe automatique à Ame — chaque présence y est à risque, et la zone est sous menace permanente de RPK dès les deux entrées de la grotte."
+  },
+  {
+    "id": "rpk-ame-002",
+    "type": "qcm",
+    "question": "À partir d'où la menace permanente de RPK s'applique-t-elle à Ame ?",
+    "options": [
+      "Dès les deux entrées de la grotte",
+      "Seulement au centre du village",
+      "Seulement dans le palais du chef",
+      "Le RPK n'est jamais actif à Ame"
+    ],
+    "answer": 0,
+    "explanation": "Ame et la zone du Pays de la Pluie sont sous menace permanente de RPK dès les deux entrées de la grotte."
+  },
+  {
+    "id": "rpk-ame-003",
+    "type": "qcm",
+    "question": "Un nukenin qui tombe au pays de la Pluie subit quelles conséquences ?",
+    "options": [
+      "RPK sans aide et sans recours en BDA, sauf si celui qui le fait tomber choisit de le relever",
+      "Aucune conséquence particulière",
+      "Une simple capture temporaire avec libération automatique",
+      "Un transfert automatique vers Konoha"
+    ],
+    "answer": 0,
+    "explanation": "Un joueur qui tombe au pays de la Pluie est RPK sans aide et sans recours en BDA. Celui qui le fait tomber peut choisir de le relever au lieu de le tuer."
+  },
+  {
+    "id": "rpk-ame-004",
+    "type": "vf",
+    "question": "Un nukenin doit faire un /NA en entrant à Amegakure, sauf s'il est propriétaire des lieux ou dans une exception vue en RP.",
+    "answer": true,
+    "explanation": "Cette obligation fait partie des règles concernant le statut de nukenin : faire un /NA en entrant à Amegakure, sauf propriétaires des lieux ou exception RP."
+  }
+]

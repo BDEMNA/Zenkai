@@ -1,0 +1,70 @@
+[
+  {
+    "id": "rpk-suna-001",
+    "type": "vf",
+    "question": "Le mass RP est obligatoire dans les domaines de clan actifs à Suna.",
+    "answer": true,
+    "explanation": "Dans les domaines de clan actifs, le mass RP est obligatoire en toutes circonstances. Toute entrée doit être signalée au chef de clan, par un membre connecté ou en MP à défaut."
+  },
+  {
+    "id": "rpk-suna-002",
+    "type": "qcm",
+    "question": "Que risque-t-on en entrant sans autorisation claire dans le Palais du Kazekage ?",
+    "options": [
+      "Une sanction RP pouvant aller jusqu'au RPK",
+      "Rien, c'est une zone publique",
+      "Un simple avertissement HRP",
+      "Une amende en ryos uniquement"
+    ],
+    "answer": 0,
+    "explanation": "Entrer sans autorisation claire du Kazekage ou d'un membre du conseil du vent est interdit, et une justification très solide est exigée. La sanction RP peut aller jusqu'au RPK."
+  },
+  {
+    "id": "rpk-suna-003",
+    "type": "qcm",
+    "question": "À quoi servent les cellules du Palais à Suna ?",
+    "options": [
+      "Affaires internes que la police ne peut pas gérer : trahison, désertion, détention de ninjas étrangers",
+      "Cellules classiques pour tout type de délit mineur",
+      "Stockage d'armes uniques confisquées",
+      "Logement temporaire des nouveaux arrivants"
+    ],
+    "answer": 0,
+    "explanation": "Ce ne sont pas des cellules classiques : elles sont réservées aux affaires internes que la police ne peut pas gérer (trahison, désertion, détention de ninjas étrangers), avec usage soumis à discrétion totale et autorisation du staff."
+  },
+  {
+    "id": "rpk-suna-004",
+    "type": "vf",
+    "question": "Les installations ANBU à Suna sont protégées par des sceaux et impossibles à trouver par hasard.",
+    "answer": true,
+    "explanation": "Les installations ANBU sont protégées par des sceaux — impossibles à trouver par hasard. Entrer sans autorisation entraîne une détection instantanée puis neutralisation."
+  },
+  {
+    "id": "rpk-suna-005",
+    "type": "qcm",
+    "question": "Que se passe-t-il si l'on frappe un membre de l'ANBU ?",
+    "options": ["RPK immédiat", "Un simple avertissement", "Rien de particulier, comme tout autre ninja", "Une mise en prison de 48h"],
+    "answer": 0,
+    "explanation": "Frapper un membre de l'ANBU entraîne un RPK immédiat — c'est une des règles strictes listées comme interdites concernant l'ANBU."
+  },
+  {
+    "id": "rpk-suna-006",
+    "type": "vf",
+    "question": "Posséder, transmettre ou exploiter des informations sur l'ANBU peut justifier un RPK.",
+    "answer": true,
+    "explanation": "C'est explicitement listé parmi les interdits liés à l'ANBU dans les lieux RPK ON à Suna."
+  },
+  {
+    "id": "rpk-suna-007",
+    "type": "qcm",
+    "question": "Quelle est la limite de victimes maximum pour un racket dans une scène, et quel est le plafond par personne ?",
+    "options": [
+      "5 victimes max par scène, 5 000 ryos max par personne",
+      "10 victimes max, 1 000 ryos par personne",
+      "Pas de limite de victimes, 5 000 ryos par personne",
+      "5 victimes max, 50 000 ryos par personne"
+    ],
+    "answer": 0,
+    "explanation": "Le racket est plafonné à 5 000 ryos par personne, avec un maximum de 5 victimes par scène (donc 25 000 ryos maximum pour 5 ninjas)."
+  }
+]

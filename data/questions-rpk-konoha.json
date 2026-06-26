@@ -1,0 +1,76 @@
+[
+  {
+    "id": "rpk-konoha-001",
+    "type": "qcm",
+    "question": "Quel est le périmètre RPK pour le clan Hyuga à Konoha ?",
+    "options": [
+      "Tout le domaine, à partir des murailles",
+      "Seulement le bâtiment principal",
+      "Le bâtiment et son toit uniquement",
+      "Aucune zone RPK spécifique"
+    ],
+    "answer": 0,
+    "explanation": "Pour le clan Hyuga, le périmètre RPK couvre tout le domaine, à partir des murailles — comme pour le clan Senju."
+  },
+  {
+    "id": "rpk-konoha-002",
+    "type": "qcm",
+    "question": "Quel est le périmètre RPK pour le clan Nara à Konoha ?",
+    "options": [
+      "Le bâtiment et son toit",
+      "Tout le domaine à partir des murailles",
+      "La colline forteresse uniquement",
+      "Tout le village"
+    ],
+    "answer": 0,
+    "explanation": "Pour le clan Nara, le périmètre RPK est le bâtiment et son toit — comme pour le clan Akimichi."
+  },
+  {
+    "id": "rpk-konoha-003",
+    "type": "vf",
+    "question": "Le clan Uchiha a un périmètre RPK qui couvre tout le domaine et la colline forteresse.",
+    "answer": true,
+    "explanation": "Pour le clan Uchiha, le périmètre RPK est tout le domaine et la colline forteresse."
+  },
+  {
+    "id": "rpk-konoha-004",
+    "type": "qcm",
+    "question": "À partir de quel point le Palais du Hokage est-il en zone RPK ?",
+    "options": [
+      "À partir du 1er étage, une fois les escaliers franchis (inclus), pour tous sauf le commandement et les forces spéciales",
+      "Dès l'entrée du bâtiment, sans exception",
+      "Uniquement le bureau du Hokage",
+      "Le palais entier n'est jamais en RPK"
+    ],
+    "answer": 0,
+    "explanation": "Le Palais du Hokage est RPK à partir du 1er étage, escaliers franchis inclus — pour tous sauf le commandement et les forces spéciales."
+  },
+  {
+    "id": "rpk-konoha-005",
+    "type": "vf",
+    "question": "Le QG de la Police à Konoha est une zone RPK complète.",
+    "answer": true,
+    "explanation": "Le QG de la Police est listé comme zone RPK complète, au même titre que les domaines de clans (Uchiha, Nara, Hyuga, Senju, Akimichi) et le Palais du Hokage."
+  },
+  {
+    "id": "rpk-konoha-006",
+    "type": "qcm",
+    "question": "Que se passe-t-il si l'on entre sans autorisation dans une installation ANBU à Konoha ?",
+    "options": [
+      "Détection instantanée puis neutralisation",
+      "Rien si on reste discret",
+      "Un simple avertissement HRP",
+      "Une sanction uniquement si l'on est repéré par un autre joueur"
+    ],
+    "answer": 0,
+    "explanation": "Comme à Suna, entrer sans autorisation dans une installation ANBU entraîne une détection instantanée puis neutralisation — cette règle est commune aux deux villages."
+  },
+  {
+    "id": "rpk-konoha-007",
+    "type": "qcm",
+    "question": "Une zone de retrait (repli) est reconnue à Konoha. Quelles sont les deux zones de retrait reconnues au total dans le règlement ?",
+    "options": ["Konoha et Suna", "Konoha et Ame", "Suna et Ame", "Konoha uniquement"],
+    "answer": 0,
+    "explanation": "Les zones de retrait reconnues dans le règlement sont Konoha et Suna. Il est interdit d'entrer dans une zone de repli pour continuer le combat."
+  }
+]

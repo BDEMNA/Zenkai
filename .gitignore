@@ -1,0 +1,14 @@
+# Clés et secrets — NE JAMAIS COMMITTER
+.env
+.env.*
+!.env.example
+
+# Dépendances Node (script local uniquement)
+node_modules/
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log

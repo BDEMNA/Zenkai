@@ -1,0 +1,172 @@
+[
+  {
+    "id": "lore-suna-001",
+    "type": "qcm",
+    "question": "Qui est le 1er Kazekage et fondateur de Sunagakure ?",
+    "options": ["Reto", "Shamon Shirogane", "Un membre du clan Sabaku", "Demna Thot"],
+    "answer": 0,
+    "explanation": "Reto est le 1er Kazekage. Il a unifié les clans épars du Pays du Vent en une seule entité, avec un règne dur mais légitimateur, et a développé les premières techniques de sable."
+  },
+  {
+    "id": "lore-suna-002",
+    "type": "vf",
+    "question": "Reto, le 1er Kazekage, est mort de vieillesse après un règne paisible.",
+    "answer": false,
+    "explanation": "Reto a été assassiné — sa chute est due à des intrigues politiques internes, dans un contexte de pouvoir encore fragile."
+  },
+  {
+    "id": "lore-suna-003",
+    "type": "qcm",
+    "question": "Quel est le style de gouvernance de Shamon Shirogane, le 2e Kazekage, par opposition à Reto ?",
+    "options": [
+      "Un règne encore plus dur et autoritaire",
+      "Gouverner par la compréhension plutôt que par la force",
+      "Déléguer tout le pouvoir au conseil du vent",
+      "Un retrait complet de la politique pour se consacrer à la recherche"
+    ],
+    "answer": 1,
+    "explanation": "Shamon a un style opposé à Reto : il gouverne par la compréhension, pas la force. Il s'intéresse notamment au Shukaku (Ichibi)."
+  },
+  {
+    "id": "lore-suna-004",
+    "type": "qcm",
+    "question": "Selon le projet secret de Shamon, quel clan est identifié comme porteur potentiel d'un pouvoir de type Bijū ?",
+    "options": ["Le clan Sabaku", "Le clan Shirogane", "Le clan Thot", "Aucun clan n'est identifié"],
+    "answer": 0,
+    "explanation": "Shamon estime que la survie de Suna dépend de la maîtrise d'un pouvoir type Bijū, et identifie le clan Sabaku — qui a une affinité sable exceptionnelle — comme porteur potentiel."
+  },
+  {
+    "id": "lore-suna-005",
+    "type": "vf",
+    "question": "Shamon Shirogane est mort paisiblement, ayant transmis son projet secret à son successeur en toute transparence.",
+    "answer": false,
+    "explanation": "Shamon a lui aussi été assassiné, dans un climat de tensions internes et de méfiance envers ses recherches. Ce sont ses successeurs qui reprennent le projet, pas lui qui l'a transmis ouvertement."
+  },
+  {
+    "id": "lore-suna-006",
+    "type": "qcm",
+    "question": "Que se passe-t-il pendant le chaos de l'assassinat de Shamon ?",
+    "options": [
+      "L'héritier du clan Sabaku disparaît sans trace",
+      "Le village de Suna est détruit",
+      "Le clan Sabaku quitte Suna officiellement",
+      "Un nouveau village est fondé par les survivants"
+    ],
+    "answer": 0,
+    "explanation": "Pendant le chaos de l'assassinat de Shamon, l'héritier du clan Sabaku disparaît sans trace. Seul vestige retrouvé : sa lance, plantée dans le sable, avec des traces d'un combat violent."
+  },
+  {
+    "id": "lore-suna-007",
+    "type": "qcm",
+    "question": "Qu'est devenue la Lance de l'héritier Sabaku disparu ?",
+    "options": [
+      "Un trésor sacré du clan Sabaku, symbole de lignée perdue",
+      "Une arme interdite détruite par le conseil",
+      "Une relique offerte au village de Konoha",
+      "Un objet oublié de tous"
+    ],
+    "answer": 0,
+    "explanation": "La Lance est devenue un trésor sacré du clan Sabaku — symbole de lignée perdue et de mystère non résolu."
+  },
+  {
+    "id": "lore-suna-008",
+    "type": "vf",
+    "question": "Un personnage Genin, ex-fils d'archiviste, peut légitimement prétendre connaître le projet Jinchūriki secret de Shamon.",
+    "answer": false,
+    "explanation": "Un Genin ex-fils d'archiviste ne peut PAS prétendre connaître le projet Jinchūriki secret de Shamon, l'identité ou le destin réel de l'héritier Sabaku, ni les vraies causes des deux assassinats. Cette connaissance précise est réservée à un historien haut placé."
+  },
+  {
+    "id": "lore-suna-009",
+    "type": "qcm",
+    "question": "Quelle est la version du lore de Suna qu'un personnage de bas rang (Genin, écrivain public) peut légitimement connaître ?",
+    "options": [
+      "La version publique : Reto le fondateur, Shamon le visionnaire assassiné, la Lance comme relique connue du clan Sabaku",
+      "Les vraies causes secrètes des deux assassinats",
+      "L'identité exacte de l'héritier Sabaku disparu",
+      "Les détails du projet Jinchūriki de Shamon"
+    ],
+    "answer": 0,
+    "explanation": "Ce qu'un personnage de bas rang peut légitimement connaître, c'est la version publique : Reto le fondateur, Shamon le visionnaire assassiné, la Lance comme relique connue du clan Sabaku, et les grandes lignes politiques — pas les secrets d'État."
+  },
+  {
+    "id": "lore-suna-010",
+    "type": "vf",
+    "question": "Le village de Suna possède une histoire trouée : des pans entiers de son passé restent non résolus, comme la Lance plantée dans le sable.",
+    "answer": true,
+    "explanation": "Le destin de l'héritier Sabaku et les vraies raisons des deux assassinats (Reto et Shamon) restent des traces sans réponse, à l'image de la Lance plantée dans le sable."
+  },
+  {
+    "id": "lore-suna-011",
+    "type": "qcm",
+    "question": "Quel est le métier du père de Demna Thot ?",
+    "options": ["Commis aux archives du village", "Tisserand de chakra-fils", "Kazekage", "Marchand au quartier marchand"],
+    "answer": 0,
+    "explanation": "Le père de Demna Thot est commis aux archives du village de Suna."
+  },
+  {
+    "id": "lore-suna-012",
+    "type": "qcm",
+    "question": "Quelle est la technique de la mère de Demna Thot, tisserande de chakra-fils ?",
+    "options": [
+      "Une technique mineure et décorative, simple savoir-faire artisanal",
+      "Un Hiden puissant de combat",
+      "Une technique de soin médical",
+      "Une technique interdite de scellement"
+    ],
+    "answer": 0,
+    "explanation": "La technique de tissage de chakra-fils de la mère de Demna est mineure et purement décorative — des motifs colorés dans le tissu via un peu de chakra. C'est un simple savoir-faire artisanal, pas un Hiden."
+  },
+  {
+    "id": "lore-suna-013",
+    "type": "vf",
+    "question": "Demna Thot est un descendant direct du clan Sabaku, ce qui explique son intérêt pour la Lance.",
+    "answer": false,
+    "explanation": "Demna Thot ne doit jamais être lié au clan Sabaku ou à la Lance par le sang ou l'héritage — uniquement par intérêt narratif/historique, en tant qu'ex-fils d'archiviste."
+  },
+  {
+    "id": "lore-suna-014",
+    "type": "qcm",
+    "question": "Quel projet à court terme Demna Thot met-il en place dès son intégration au village ?",
+    "options": [
+      "Le Comptoir des Récits, un étal d'écrivain public près du quartier marchand",
+      "Une académie de tissage de chakra-fils",
+      "Une enquête officielle sur la disparition de l'héritier Sabaku",
+      "Un poste au conseil du vent"
+    ],
+    "answer": 0,
+    "explanation": "Le Comptoir des Récits est l'objectif à court terme de Demna : un étal d'écrivain public où il propose rédaction de lettres, transcription de rapports, mise au propre de notes de mission et traduction de dialectes."
+  },
+  {
+    "id": "lore-suna-015",
+    "type": "qcm",
+    "question": "Quel est le style de combat de Demna Thot ?",
+    "options": [
+      "Défensif / contre-attaque, cohérent avec son besoin d'observer avant d'agir",
+      "Offensif frontal pur",
+      "Spécialiste d'un Hiden de clan",
+      "Spécialiste du combat à distance avec armes uniques"
+    ],
+    "answer": 0,
+    "explanation": "Demna n'est pas un combattant frontal. Son style est défensif / contre-attaque : il observe avant d'agir, laisse l'adversaire s'exposer, et frappe sur l'ouverture."
+  },
+  {
+    "id": "lore-suna-016",
+    "type": "vf",
+    "question": "Demna Thot maîtrise une détection avancée de genjutsu grâce à un Hiden transmis par sa mère.",
+    "answer": false,
+    "explanation": "Demna a une légère sensibilité à la détection (bluff, genjutsu de bas niveau), mais rien d'avancé ni de spécialisé — pas de clan, pas de Hiden. C'est une extension naturelle de son don d'observation, cohérente avec un Genin."
+  },
+  {
+    "id": "lore-suna-017",
+    "type": "qcm",
+    "question": "Pourquoi Demna Thot a-t-il quitté les archives pour devenir ninja ?",
+    "options": [
+      "Pour ne plus jamais se contenter d'observer, après avoir vu un jeune ninja craquer sans rien dire",
+      "Pour suivre une tradition familiale obligatoire",
+      "Pour rejoindre le clan Sabaku",
+      "Parce que les archives ont été détruites"
+    ],
+    "answer": 0,
+    "explanation": "Demna a vu un jeune ninja craquer intérieurement avant une mission qui a mal tourné, sans rien dire. Il vit avec ça, et c'est en partie pour ça qu'il est devenu ninja : pour ne plus jamais se contenter d'observer."
+  }
+]

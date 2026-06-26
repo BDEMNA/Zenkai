@@ -1,0 +1,265 @@
+[
+  {
+    "id": "hrprp-001",
+    "type": "qcm",
+    "question": "Comment doit obligatoirement se faire tout changement de village ?",
+    "options": ["Via un ticket sur le launcher", "Directement en RP sans formalité", "Par message privé au staff", "En se présentant en personne au Kage adverse"],
+    "answer": 0,
+    "explanation": "Tout changement de village doit obligatoirement être effectué via un ticket sur le launcher. Toute tentative sans cette procédure sera sanctionnée."
+  },
+  {
+    "id": "hrprp-002",
+    "type": "vf",
+    "question": "Les demandes de déwarn ou de déban peuvent être faites par message privé si la sanction date de plus de 2 mois.",
+    "answer": false,
+    "explanation": "Les demandes de déwarn/déban doivent impérativement être faites via ticket — les demandes par message privé sont interdites, même si la sanction date de plus de 2 mois."
+  },
+  {
+    "id": "hrprp-003",
+    "type": "qcm",
+    "question": "Quelle est la sanction pour un message à caractère sexuel, insultant ou déplacé adressé à un joueur ?",
+    "options": ["Bannissement permanent de toutes les plateformes", "Un simple avertissement", "24h de mute vocal", "Une perte de slot clan uniquement"],
+    "answer": 0,
+    "explanation": "Tout comportement discriminatoire ou harcelant entraîne un bannissement immédiat, et un message à caractère sexuel, insultant, provocateur ou déplacé entraîne un bannissement permanent de toutes les plateformes."
+  },
+  {
+    "id": "hrprp-004",
+    "type": "vf",
+    "question": "Participer à une discussion active sur Discord ou TeamSpeak tout en étant en RP est autorisé, tant qu'on ne partage pas d'informations RP.",
+    "answer": false,
+    "explanation": "Le « Double Vocal » est interdit : participer à une discussion active sur Discord/TeamSpeak en étant en RP est interdit, justement pour limiter tout risque de metagaming. La transmission d'informations RP via un vocal externe est également interdite."
+  },
+  {
+    "id": "hrprp-005",
+    "type": "qcm",
+    "question": "Combien de tickets suivis un joueur peut-il avoir actifs en même temps ?",
+    "options": [
+      "Un seul, sauf autorisation du MJ de mettre le premier en pause",
+      "Autant qu'il le souhaite",
+      "Maximum 3",
+      "Aucune limite pour les tickets clans uniquement"
+    ],
+    "answer": 0,
+    "explanation": "Seul un ticket suivi peut être actif par joueur. Pour un second, il faut demander l'autorisation à son MJ de passer le premier en pause. Les tickets clans n'entrent pas dans cette limitation."
+  },
+  {
+    "id": "hrprp-006",
+    "type": "vf",
+    "question": "Un joueur peut contester une décision du staff directement par message privé s'il a un motif valable.",
+    "answer": false,
+    "explanation": "Il est strictement interdit de contacter un membre du staff par message privé sans motif valable. Toute remise en question d'une décision staff doit passer par un ticket sur le launcher ou un passage en BDA — jamais par MP."
+  },
+  {
+    "id": "hrprp-007",
+    "type": "qcm",
+    "question": "Qu'est-ce que le Bunny Hop, et quel est son statut ?",
+    "options": [
+      "Enchaîner des sauts pour augmenter sa vitesse — totalement interdit",
+      "Une technique de combat autorisée pour les Genin",
+      "Un terme désignant les sauts entre toits autorisés en mission",
+      "Une mécanique de jeu encouragée par le staff"
+    ],
+    "answer": 0,
+    "explanation": "Le Bunny Hop consiste à enchaîner des sauts pour augmenter sa vitesse de déplacement — c'est totalement interdit, y compris via des macros."
+  },
+  {
+    "id": "hrprp-008",
+    "type": "vf",
+    "question": "Le Fear RP impose de jouer la peur de manière réaliste face à un danger réel, et il est interdit d'agir comme si son personnage était invincible.",
+    "answer": true,
+    "explanation": "Le Fear RP exige de jouer la peur selon la menace et de fuir ou se rendre quand la situation l'exige. Il est interdit d'ignorer une menace sérieuse ou d'agir comme si son personnage était invincible."
+  },
+  {
+    "id": "hrprp-009",
+    "type": "qcm",
+    "question": "Qu'interdit le Force RP ?",
+    "options": [
+      "Imposer une action sans laisser le temps de réagir",
+      "Toute action de combat physique",
+      "L'usage de jutsu de rang S",
+      "Les actions narratives via /it"
+    ],
+    "answer": 0,
+    "explanation": "Le Force RP, qui consiste à imposer une action sans laisser le temps de réagir, est strictement interdit. Cela inclut le fait de forcer une action sur quelqu'un sans laisser de réponse possible."
+  },
+  {
+    "id": "hrprp-010",
+    "type": "qcm",
+    "question": "Qu'est-ce que le FreeKill ?",
+    "options": [
+      "Éliminer un joueur sans justification RP",
+      "Tuer un joueur après un long combat justifié",
+      "Le terme désignant un RPK validé par ticket",
+      "Une mécanique de jeu pour les nouveaux joueurs"
+    ],
+    "answer": 0,
+    "explanation": "Le FreeKill, c'est éliminer un joueur sans justification RP — strictement interdit. Tuer sans raison valable ni avertissement, ou attaquer mortellement sans interaction préalable, en font partie."
+  },
+  {
+    "id": "hrprp-011",
+    "type": "vf",
+    "question": "L'utilisation d'un jutsu de clan ou de kekkei genkai par un membre des Forces Spéciales prouve son appartenance à ce clan.",
+    "answer": false,
+    "explanation": "C'est explicitement faux : l'utilisation d'un jutsu de clan ou de kekkei genkai par un membre des Forces Spéciales ne prouve pas son appartenance. On ne peut pas reconnaître quelqu'un uniquement par sa tenue ou sa robe."
+  },
+  {
+    "id": "hrprp-012",
+    "type": "qcm",
+    "question": "Qu'est-ce que le Metagaming ?",
+    "options": [
+      "Utiliser des informations hors RP (Discord, Twitch, etc.) dans le jeu",
+      "Jouer plusieurs personnages en même temps",
+      "Changer de village sans ticket",
+      "Utiliser des macros de déplacement"
+    ],
+    "answer": 0,
+    "explanation": "Le Metagaming consiste à utiliser des informations obtenues hors RP (Discord, Twitch, etc.) dans le jeu — c'est interdit. Seules les informations obtenues en RP peuvent être utilisées."
+  },
+  {
+    "id": "hrprp-013",
+    "type": "qcm",
+    "question": "Que dit la NLR (New Life Rule) sur un personnage qui tombe en bataille ?",
+    "options": [
+      "Sa mémoire est altérée et il ne peut plus utiliser les informations d'avant sa chute, ni retourner sur les lieux",
+      "Il garde toute sa mémoire mais doit rester silencieux 10 minutes",
+      "Il peut retourner immédiatement au combat après s'être soigné",
+      "Il devient automatiquement nukenin"
+    ],
+    "answer": 0,
+    "explanation": "Quand un personnage tombe, sa mémoire est altérée selon la NLR : il ne peut plus utiliser les informations d'avant sa chute, ni retourner sur les lieux de sa chute ou revenir sur le champ de bataille."
+  },
+  {
+    "id": "hrprp-014",
+    "type": "vf",
+    "question": "Se suicider pour éviter une capture est autorisé par la NLR.",
+    "answer": false,
+    "explanation": "Se suicider pour éviter une capture est explicitement listé comme interdit dans les règles de la NLR."
+  },
+  {
+    "id": "hrprp-015",
+    "type": "qcm",
+    "question": "Qu'exige le Pain RP d'un personnage blessé ?",
+    "options": [
+      "Adapter ses réactions à la gravité des blessures (gêner, boiter, ramper) et jouer la douleur",
+      "Ignorer la douleur pour continuer le combat normalement",
+      "Se soigner immédiatement sans jouer la scène",
+      "Demander systématiquement un MJ pour gérer la blessure"
+    ],
+    "answer": 0,
+    "explanation": "Le Pain RP impose d'adapter ses réactions à la gravité des blessures (gêner, boiter, ramper) et de jouer la douleur après une chute en mission ou en guerre. Continuer de se battre après une amputation est interdit."
+  },
+  {
+    "id": "hrprp-016",
+    "type": "qcm",
+    "question": "Qu'est-ce que le Powergaming ?",
+    "options": [
+      "Effectuer des actions irréalistes ou impossibles pour son personnage",
+      "Monter en grade rapidement",
+      "Posséder une arme unique",
+      "Avoir un personnage issu d'un clan majeur"
+    ],
+    "answer": 0,
+    "explanation": "Le Powergaming consiste à effectuer des actions irréalistes ou impossibles — comme rester sous le feu 20 minutes sans conséquences, ou forcer une action sans laisser de réponse possible à l'adversaire."
+  },
+  {
+    "id": "hrprp-017",
+    "type": "vf",
+    "question": "Quand un personnage est RPK, il doit créer un nouveau personnage : toutes les informations, relations et possessions du personnage mort sont perdues.",
+    "answer": true,
+    "explanation": "Le RPK (Role Play Kill) est la mort définitive du personnage. Après un RPK, le joueur doit créer un nouveau personnage et perd toutes les informations, relations et possessions de l'ancien."
+  },
+  {
+    "id": "hrprp-018",
+    "type": "qcm",
+    "question": "Que sanctionne le StreamHack, et quelle en est la sanction ?",
+    "options": [
+      "Regarder le stream d'un ennemi ou faction adverse pour en tirer un avantage en RP — bannissement immédiat",
+      "Regarder n'importe quel stream — avertissement seulement",
+      "Streamer sa propre partie sans autorisation — wipe du personnage",
+      "Utiliser un overlay de stream — mute temporaire"
+    ],
+    "answer": 0,
+    "explanation": "Regarder le stream d'un ennemi ou d'une faction adverse est considéré comme du StreamHack et entraîne un bannissement immédiat. Regarder le stream d'un allié est toléré mais ne doit pas influencer le RP, et utiliser ces informations est sanctionné."
+  },
+  {
+    "id": "hrprp-019",
+    "type": "qcm",
+    "question": "Quelle est la différence entre WinRP et LoseRP ?",
+    "options": [
+      "WinRP veut gagner à tout prix sans accepter la défaite (interdit) ; LoseRP accepte la défaite (obligatoire)",
+      "WinRP et LoseRP désignent la même chose, juste à des grades différents",
+      "WinRP est autorisé en guerre uniquement, LoseRP en duel uniquement",
+      "Ce sont des termes liés uniquement aux combats de clans"
+    ],
+    "answer": 0,
+    "explanation": "Le WinRP (vouloir gagner à tout prix sans jamais accepter la défaite) est interdit. Le LoseRP (accepter que son personnage puisse perdre) est obligatoire sur le serveur."
+  },
+  {
+    "id": "hrprp-020",
+    "type": "vf",
+    "question": "Le FreePunch est autorisé tant que le coup reste symbolique et sans gravité.",
+    "answer": false,
+    "explanation": "Le FreePunch — frapper sans justification RP — est strictement interdit, quelle que soit la gravité du coup. Les combats doivent avoir un cadre RP : provocation, conflit, arrestation."
+  },
+  {
+    "id": "hrprp-021",
+    "type": "qcm",
+    "question": "Quel est l'usage correct de la commande `/na` ?",
+    "options": [
+      "Narration globale, perçue par tout le serveur, réservée aux moments marquants",
+      "Action physique et personnelle uniquement",
+      "Narration locale concernant l'environnement proche",
+      "Narration réservée uniquement à son propre village"
+    ],
+    "answer": 0,
+    "explanation": "`/na` est une narration globale perçue par tout le serveur, réservée aux moments marquants — pas pour des actions mineures ou personnelles. L'abus de `/na` (spam, contenu trivial) est sanctionné."
+  },
+  {
+    "id": "hrprp-022",
+    "type": "qcm",
+    "question": "À quoi sert la commande `/nv` ?",
+    "options": [
+      "Narration globale réservée à son propre village, usage interne uniquement",
+      "Action physique personnelle",
+      "Annoncer une zone RPK",
+      "Demander un MJ"
+    ],
+    "answer": 0,
+    "explanation": "`/nv` est une narration globale réservée à votre village — son usage est interne au village uniquement, à la différence de `/na` qui est perçue par tout le serveur."
+  },
+  {
+    "id": "hrprp-023",
+    "type": "vf",
+    "question": "Le Wipe peut être appliqué comme sanction pour du Safe RP répété ou un comportement HRP grave.",
+    "answer": true,
+    "explanation": "Le Wipe (réinitialisation totale d'un personnage : progression, items, relations, mémoire) peut être appliqué pour Safe RP répété, désertion abusive, comportement HRP grave, ou non-respect répété des règles fondamentales."
+  },
+  {
+    "id": "hrprp-024",
+    "type": "qcm",
+    "question": "Quel est le ratio de temporalité entre temps réel et temps RP ?",
+    "options": ["1 semaine IRL = 1 an RP, 1 jour IRL = 1 mois RP", "1 jour IRL = 1 an RP", "1 mois IRL = 1 an RP", "Le temps RP est identique au temps réel"],
+    "answer": 0,
+    "explanation": "1 semaine IRL équivaut à 1 an RP, et 1 jour IRL équivaut à 1 mois RP. Une dérogation existe pour la sortie d'académie possible dès 14 ans."
+  },
+  {
+    "id": "hrprp-025",
+    "type": "vf",
+    "question": "Une personne masquée est inidentifiable, sauf si elle porte une arme unique, révèle son nom en étant masquée, ou porte un artefact de clan unique.",
+    "answer": true,
+    "explanation": "Une personne masquée est inidentifiable par défaut (un demi-masque comme un respirateur compte comme un masque complet). On ne peut l'identifier que via une arme unique, une révélation de nom, ou un artefact de clan unique."
+  },
+  {
+    "id": "hrprp-026",
+    "type": "qcm",
+    "question": "Peut-on reconnaître un membre de sa propre famille s'il est masqué ?",
+    "options": [
+      "Non, reconnaître un membre de sa famille masqué (enfant, parent) est interdit",
+      "Oui, toujours, le lien familial prime",
+      "Oui, mais seulement avec validation MJ",
+      "Cela dépend du grade du personnage masqué"
+    ],
+    "answer": 0,
+    "explanation": "Reconnaître un membre de la famille masqué (enfants, parents) est explicitement interdit, même si le masque ou la tenue semblent identiques à plusieurs heures de différence."
+  }
+]
