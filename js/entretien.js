@@ -295,42 +295,43 @@ async function sendMessage() {
 }
 
 // ──────────────────────────────────────────────
-// GEMINI API
+// DEEPSEEK API
 // ──────────────────────────────────────────────
 async function callGemini(systemPrompt, msgs) {
   waitingForAI = true;
   try {
     const payload = {
-      system_instruction: { parts: [{ text: systemPrompt }] },
-      contents: msgs.map(m => ({
-        role: m.role === 'model' ? 'model' : 'user',
-        parts: [{ text: m.content }]
-      })),
-      generationConfig: {
-        temperature: 0.8,
-        maxOutputTokens: 1024,
-      }
+      model: 'deepseek-chat',
+      temperature: 0.8,
+      max_tokens: 1024,
+      messages: [
+        { role: 'system', content: systemPrompt },
+        ...msgs.map(m => ({
+          role: m.role === 'model' ? 'assistant' : 'user',
+          content: m.content
+        }))
+      ]
     };
 
-    const res = await fetch(
-      `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${apiKey}`,
-      {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(payload)
-      }
-    );
+    const res = await fetch('https://api.deepseek.com/chat/completions', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': `Bearer ${apiKey}`
+      },
+      body: JSON.stringify(payload)
+    });
 
     const data = await res.json();
 
     if (data.error) {
-      appendMsg('ai', `❌ Erreur API : ${data.error.message}`);
+      appendMsg('ai', `❌ Erreur API DeepSeek : ${data.error.message}`);
       return null;
     }
 
-    return data.candidates?.[0]?.content?.parts?.[0]?.text || null;
+    return data.choices?.[0]?.message?.content || null;
   } catch (e) {
-    appendMsg('ai', '❌ Erreur réseau. Vérifie ta connexion et ta clé API.');
+    appendMsg('ai', '❌ Erreur réseau. Vérifie ta connexion et ta clé API DeepSeek.');
     return null;
   } finally {
     waitingForAI = false;
