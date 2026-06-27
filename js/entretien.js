@@ -18,8 +18,8 @@ let oralEnded = false;
 // ──────────────────────────────────────────────
 function saveApiKey() {
   const val = document.getElementById('apiKeyInput').value.trim();
-  if (!val || val.length < 20) {
-    alert('Clé invalide. Colle ta clé API Gemini telle quelle depuis Google AI Studio.');
+  if (!val) {
+    alert('Colle ta clé API Gemini avant de continuer.');
     return;
   }
   apiKey = val;
