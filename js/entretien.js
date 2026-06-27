@@ -18,8 +18,8 @@ let oralEnded = false;
 // ──────────────────────────────────────────────
 function saveApiKey() {
   const val = document.getElementById('apiKeyInput').value.trim();
-  if (!val.startsWith('AIza') || val.length < 30) {
-    alert('Clé invalide. Une clé API Gemini commence par "AIza" et fait au moins 30 caractères.');
+  if (!val || val.length < 20) {
+    alert('Clé invalide. Colle ta clé API Gemini telle quelle depuis Google AI Studio.');
     return;
   }
   apiKey = val;
